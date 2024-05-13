@@ -17,9 +17,8 @@
     @return :{Boolean}
 */
 
-s = "http://test";
+// 使用 startWith 檢查是否以 "https://" 開頭
 
-//使用 includes 檢查
 function checkHTTPS(s) {
-  return s.toLowerCase().startsWith("https");
+  return s.toLowerCase().startsWith("https://");
 }
