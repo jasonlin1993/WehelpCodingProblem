@@ -22,6 +22,12 @@
     @return :{Integer}
 */
 function findIndex(nums, target) {
-  let target = i; 
-  if 
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === target) {
+      return i;
+    }
+  }
+  return -1;
 }
+
+console.log(findIndex([5, 2, 3], 4));
