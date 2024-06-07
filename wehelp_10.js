@@ -22,13 +22,11 @@
 function ffill(words) {
   let previous = "";
   for (let i = 0; i < words.length; i++) {
-    if (words[i] === "") {
-      if (previous !== "") {
+    if (words[i] === "")
+      if (previous != words[i]) {
         words[i] = previous;
       }
-    } else {
-      previous = words[i];
-    }
+    previous = words[i];
   }
   return words;
 }
