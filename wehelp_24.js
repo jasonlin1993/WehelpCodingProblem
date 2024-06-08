@@ -17,7 +17,7 @@ Stack 堆疊是一種基礎資料結構，我們使用陣列 / 列表來實作�
 
 */
 function processStackOperations(ops) {
-  let stackSplit = ops.replace(/([a-bA-B])/g, "$1,").split(/,| /);
+  let stackSplit = ops.split(/,| /);
   let stackAns = [];
   for (let i = 0; i < stackSplit.length; i++) {
     if (stackSplit[i] == "pop") {
