@@ -23,7 +23,6 @@ console.log(sqrt(15));
 /*
 function sqrt(n) {
     return Math.round(Math.sqrt(n))
-
 }
 
 */
