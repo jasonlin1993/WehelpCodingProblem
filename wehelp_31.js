@@ -14,6 +14,8 @@
 */
 function exchange(ns) {
   return [ns[1], ns[0]];
+
+  //return ns.reverse()
 }
 
 console.log(exchange([2, 4]));
